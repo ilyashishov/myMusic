@@ -1,0 +1,119 @@
+﻿Build started 21.10.2015 0:30:22.
+     1>Project "D:\project\MyMusic\echoprint-codegen\windows\codegen.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\codegen.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"..\zlib-1.2.5" /I"..\taglib-1.7" /I"..\taglib-1.7\include" /I..\boost_1_46_1 /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D CODEGEN_EXPORTS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\AudioBufferInput.cxx ..\src\AudioStreamInput.cxx ..\src\Base64.cxx ..\src\Codegen.cxx ..\src\Fingerprint.cxx ..\src\main.cxx ..\src\MatrixUtility.cxx ..\src\Metadata.cxx ..\src\SubbandAnalysis.cxx ..\src\Whitening.cxx
+         Whitening.cxx
+     1>d:\project\mymusic\echoprint-codegen\src\win_funcs.h(30): warning C4996: '_ftime64': This function or variable may be unsafe. Consider using _ftime64_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\sys\timeb.h(124) : see declaration of '_ftime64'
+     1>d:\project\mymusic\echoprint-codegen\src\win_funcs.h(31): warning C4244: '=' : conversion from '__time64_t' to 'long', possible loss of data
+     1>d:\project\mymusic\echoprint-codegen\src\matrixutility.h(12): fatal error C1083: Cannot open include file: 'boost/numeric/ublas/matrix.hpp': No such file or directory
+         SubbandAnalysis.cxx
+     1>d:\project\mymusic\echoprint-codegen\src\win_funcs.h(30): warning C4996: '_ftime64': This function or variable may be unsafe. Consider using _ftime64_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\sys\timeb.h(124) : see declaration of '_ftime64'
+     1>d:\project\mymusic\echoprint-codegen\src\win_funcs.h(31): warning C4244: '=' : conversion from '__time64_t' to 'long', possible loss of data
+     1>d:\project\mymusic\echoprint-codegen\src\matrixutility.h(12): fatal error C1083: Cannot open include file: 'boost/numeric/ublas/matrix.hpp': No such file or directory
+         Metadata.cxx
+     1>d:\project\mymusic\echoprint-codegen\src\metadata.cxx(8): fatal error C1083: Cannot open include file: 'fileref.h': No such file or directory
+         MatrixUtility.cxx
+     1>d:\project\mymusic\echoprint-codegen\src\win_funcs.h(30): warning C4996: '_ftime64': This function or variable may be unsafe. Consider using _ftime64_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\sys\timeb.h(124) : see declaration of '_ftime64'
+     1>d:\project\mymusic\echoprint-codegen\src\win_funcs.h(31): warning C4244: '=' : conversion from '__time64_t' to 'long', possible loss of data
+     1>d:\project\mymusic\echoprint-codegen\src\matrixutility.h(12): fatal error C1083: Cannot open include file: 'boost/numeric/ublas/matrix.hpp': No such file or directory
+         main.cxx
+     1>d:\project\mymusic\echoprint-codegen\src\win_funcs.h(30): warning C4996: '_ftime64': This function or variable may be unsafe. Consider using _ftime64_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\sys\timeb.h(124) : see declaration of '_ftime64'
+     1>d:\project\mymusic\echoprint-codegen\src\win_funcs.h(31): warning C4244: '=' : conversion from '__time64_t' to 'long', possible loss of data
+     1>d:\project\mymusic\echoprint-codegen\src\file.h(28): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>d:\project\mymusic\echoprint-codegen\src\audiostreaminput.h(66): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     1>d:\project\mymusic\echoprint-codegen\src\audiostreaminput.h(69): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     1>d:\project\mymusic\echoprint-codegen\src\audiostreaminput.h(89): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     1>d:\project\mymusic\echoprint-codegen\src\audiostreaminput.h(92): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+         Exporting codegen.dll
+     1>d:\project\mymusic\echoprint-codegen\src\codegen.h(44): warning C4251: 'Codegen::_CodeString' : class 'std::basic_string<_Elem,_Traits,_Ax>' needs to have dll-interface to be used by clients of class 'Codegen'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+     1>d:\project\mymusic\echoprint-codegen\src\main.cxx(126): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>d:\project\mymusic\echoprint-codegen\src\main.cxx(137): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>d:\project\mymusic\echoprint-codegen\src\main.cxx(216): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+         Fingerprint.cxx
+     1>d:\project\mymusic\echoprint-codegen\src\win_funcs.h(30): warning C4996: '_ftime64': This function or variable may be unsafe. Consider using _ftime64_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\sys\timeb.h(124) : see declaration of '_ftime64'
+     1>d:\project\mymusic\echoprint-codegen\src\win_funcs.h(31): warning C4244: '=' : conversion from '__time64_t' to 'long', possible loss of data
+     1>d:\project\mymusic\echoprint-codegen\src\matrixutility.h(12): fatal error C1083: Cannot open include file: 'boost/numeric/ublas/matrix.hpp': No such file or directory
+         Codegen.cxx
+         Exporting codegen.dll
+     1>d:\project\mymusic\echoprint-codegen\src\codegen.h(44): warning C4251: 'Codegen::_CodeString' : class 'std::basic_string<_Elem,_Traits,_Ax>' needs to have dll-interface to be used by clients of class 'Codegen'
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+     1>d:\project\mymusic\echoprint-codegen\src\win_funcs.h(30): warning C4996: '_ftime64': This function or variable may be unsafe. Consider using _ftime64_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\sys\timeb.h(124) : see declaration of '_ftime64'
+     1>d:\project\mymusic\echoprint-codegen\src\win_funcs.h(31): warning C4244: '=' : conversion from '__time64_t' to 'long', possible loss of data
+     1>d:\project\mymusic\echoprint-codegen\src\file.h(28): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>d:\project\mymusic\echoprint-codegen\src\audiostreaminput.h(66): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     1>d:\project\mymusic\echoprint-codegen\src\audiostreaminput.h(69): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     1>d:\project\mymusic\echoprint-codegen\src\audiostreaminput.h(89): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     1>d:\project\mymusic\echoprint-codegen\src\audiostreaminput.h(92): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     1>d:\project\mymusic\echoprint-codegen\src\matrixutility.h(12): fatal error C1083: Cannot open include file: 'boost/numeric/ublas/matrix.hpp': No such file or directory
+         Base64.cxx
+         AudioStreamInput.cxx
+     1>d:\project\mymusic\echoprint-codegen\src\win_funcs.h(30): warning C4996: '_ftime64': This function or variable may be unsafe. Consider using _ftime64_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\sys\timeb.h(124) : see declaration of '_ftime64'
+     1>d:\project\mymusic\echoprint-codegen\src\win_funcs.h(31): warning C4244: '=' : conversion from '__time64_t' to 'long', possible loss of data
+     1>d:\project\mymusic\echoprint-codegen\src\file.h(28): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>d:\project\mymusic\echoprint-codegen\src\audiostreaminput.h(66): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     1>d:\project\mymusic\echoprint-codegen\src\audiostreaminput.h(69): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     1>d:\project\mymusic\echoprint-codegen\src\audiostreaminput.h(89): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     1>d:\project\mymusic\echoprint-codegen\src\audiostreaminput.h(92): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     1>d:\project\mymusic\echoprint-codegen\src\audiostreaminput.cxx(78): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>d:\project\mymusic\echoprint-codegen\src\audiostreaminput.cxx(98): warning C4244: 'initializing' : conversion from 'const float' to 'uint', possible loss of data
+         AudioBufferInput.cxx
+     1>d:\project\mymusic\echoprint-codegen\src\win_funcs.h(30): warning C4996: '_ftime64': This function or variable may be unsafe. Consider using _ftime64_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\sys\timeb.h(124) : see declaration of '_ftime64'
+     1>d:\project\mymusic\echoprint-codegen\src\win_funcs.h(31): warning C4244: '=' : conversion from '__time64_t' to 'long', possible loss of data
+     1>d:\project\mymusic\echoprint-codegen\src\file.h(28): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+     1>d:\project\mymusic\echoprint-codegen\src\audiostreaminput.h(66): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     1>d:\project\mymusic\echoprint-codegen\src\audiostreaminput.h(69): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     1>d:\project\mymusic\echoprint-codegen\src\audiostreaminput.h(89): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     1>d:\project\mymusic\echoprint-codegen\src\audiostreaminput.h(92): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     1>d:\project\mymusic\echoprint-codegen\src\audiobufferinput.cxx(22): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+         Generating Code...
+     1>Done Building Project "D:\project\MyMusic\echoprint-codegen\windows\codegen.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:07.39
