@@ -1,5 +1,7 @@
 var codegen = require('echoprint-codegen');
 var fs = require('fs');
+var request = require('request');
+
 
 fs.readdir( process.argv[2], function (err, files) { 
 	if (!err) {
@@ -12,7 +14,15 @@ fs.readdir( process.argv[2], function (err, files) {
 					}
 				codegen(opts, function (err, data) {
 					if (err) return console.error(err);
-						console.log(data);
+					var treak = data;
+					var formData = {code: treak.code, version: treak.metadata.version.toString(), track: treak.metadata.title, length : treak.metadata.duration, artist: treak.metadata.artist};
+
+					request.post({url:'http://52.27.204.237:37760/ingest', form: formData}, function optionalCallback(err, httpResponse, body) {
+						if (err) {
+							return console.error('upload failed:', err);
+						}
+						console.log(body);
+					});
 				});
 			}	
 		});
@@ -21,7 +31,20 @@ fs.readdir( process.argv[2], function (err, files) {
 		throw err; 
 });
 
- 
+
+// request('http://52.27.204.237:37760/ingest?', function (error, response, body) {
+//   if (!error && response.statusCode == 200) {
+//     console.log(body) // Show the HTML for the Google homepage. 
+//   }
+// })
+
+
+// console.log(treak[0].metadata.version);
+
+// request.post({url:'http://52.27.204.237:37760/ingest', form: {code: treak[0].code, version: treak[0].metadata.version, track: treak[0].metadata.title, length: treak[0].metadata.duration, artist: treak[0].metadata.artist}, function(error, response, body){ 
+// 	console.log(body);
+// });
+
 // var opts = {
 //   file: 'test4_1.mp3',
 //   index: 10,
@@ -33,34 +56,3 @@ fs.readdir( process.argv[2], function (err, files) {
 //   console.log(data);
 // });
 
-
-// function loadXMLDoc() {
-//     var xmlhttp;
-
-//     if (window.XMLHttpRequest) {
-//         // code for IE7+, Firefox, Chrome, Opera, Safari
-//         xmlhttp = new XMLHttpRequest();
-//     } else {
-//         // code for IE6, IE5
-//         xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-//     }
-
-//     xmlhttp.onreadystatechange = function() {
-//         if (xmlhttp.readyState == XMLHttpRequest.DONE ) {
-//            if(xmlhttp.status == 200){
-//                document.getElementById("myDiv").innerHTML = xmlhttp.responseText;
-//            }
-//            else if(xmlhttp.status == 400) {
-//               alert('There was an error 400')
-//            }
-//            else {
-//                alert('something else other than 200 was returned')
-//            }
-//         }
-//     }
-
-//     xmlhttp.open("GET", "http://52.27.204.237:37760", true);
-//     xmlhttp.send();
-// }
-
-// loadXMLDoc();
