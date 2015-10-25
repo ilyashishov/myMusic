@@ -1,6 +1,5 @@
-var codegen = require('echoprint-codegen');
-var fs = require('fs');
-var request = require('request');
+var fs = require("fs"),
+	codegen = require('echoprint-codegen'),
 
 
 fs.readdir( process.argv[2], function (err, files) { 
@@ -31,6 +30,26 @@ fs.readdir( process.argv[2], function (err, files) {
 		throw err; 
 });
 
+// var opts = {
+// 	file: item,
+// 	index: 10,
+// 	offset: 30
+// }
+// codegen(opts, function (err, data) {
+// 	if (err) return console.error(err);
+// 	var treak = data;
+// 	var formData = {code: treak.code, version: treak.metadata.version.toString(), track: treak.metadata.title, length : treak.metadata.duration, artist: treak.metadata.artist};
+
+// 	request.post({url:'http://52.27.204.237:37760/ingest', form: formData}, function optionalCallback(err, httpResponse, body) {
+// 		if (err) {
+// 			return console.error('upload failed:', err);
+// 		}
+// 		console.log(body);
+// 	});
+// });
+
+
+
 
 // request('http://52.27.204.237:37760/ingest?', function (error, response, body) {
 //   if (!error && response.statusCode == 200) {
@@ -55,4 +74,3 @@ fs.readdir( process.argv[2], function (err, files) {
 //   if (err) return console.error(err);
 //   console.log(data);
 // });
-
