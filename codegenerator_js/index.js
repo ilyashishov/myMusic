@@ -3,7 +3,7 @@ var fs = require("fs"),
 	request = require('request');
 
 var opts = {
-	file: '93b95c7487c22b.mp3',
+	file: 'test.wav',
 	index: 10,
 	offset: 30
 }
@@ -16,21 +16,10 @@ codegen(opts, function (err, data) {
 			return console.error('upload failed:', err);
 		}
 		var data = JSON.parse(body);
-		console.log(data.match.artist+'-'+data.match.track);
+		if(data.success){
+			console.log({artist: data.match.artist, track: data.match.track, artist_id: data.match.artist_id});
+		}else{
+			console.log({error: {status: data.status}});
+		}
 	});
 });
-
-// request.post({url:'http://52.27.204.237:37760/ingest', form: {code: treak[0].code, version: treak[0].metadata.version, track: treak[0].metadata.title, length: treak[0].metadata.duration, artist: treak[0].metadata.artist}, function(error, response, body){ 
-// 	console.log(body);
-// });
-
-// var opts = {
-//   file: 'test4_1.mp3',
-//   index: 10,
-//   offset: 30
-// }
- 
-// codegen(opts, function (err, data) {
-//   if (err) return console.error(err);
-//   console.log(data);
-// });
