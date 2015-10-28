@@ -16,7 +16,7 @@ fs.readdir( process.argv[2], function (err, files) {
 					var treak = data;
 					var formData = {code: treak.code, version: treak.metadata.version.toString(), track: treak.metadata.title, length : treak.metadata.duration, artist: treak.metadata.artist};
 
-					request.post({url:'http://52.27.204.237:37760/ingest', form: formData}, function optionalCallback(err, httpResponse, body) {
+					request.post({url:'http://54.148.221.105:37760/ingest', form: formData}, function optionalCallback(err, httpResponse, body) {
 						if (err) {
 							return console.error('upload failed:', err);
 						}
