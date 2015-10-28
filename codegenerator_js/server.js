@@ -1,8 +1,15 @@
 var express = require('express'),
 router = express.Router(),
 fs = require("fs"),
+<<<<<<< HEAD
 codegen = require('echoprint-codegen'),
 request = require('request'),
+=======
+multiparty = require('multiparty'),
+codegen = require('echoprint-codegen'),
+request = require('request'),
+formidable = require("formidable"),
+>>>>>>> a8e39c9eb36ee34cf3d4e1d554b57feadd14ed42
 util = require('util');
 
 
@@ -31,11 +38,22 @@ app.post('/query', function(req ,res) {
         offset: 30
     }
     codegen(opts, function (err, data) {
+<<<<<<< HEAD
         if (err) return console.error(err);
+=======
+        if (err){
+            res.end('Error upload failed:');
+            return console.error(err);
+        } 
+>>>>>>> a8e39c9eb36ee34cf3d4e1d554b57feadd14ed42
         var treak = data;
         var formData = {code: treak.code, version: treak.metadata.version.toString(), length : treak.metadata.duration};
         request.get({url:'http://52.27.204.237:37760/query?code='+treak.code+'&version='+treak.metadata.version.toString()}, function optionalCallback(err, httpResponse, body) {
             if (err) {
+<<<<<<< HEAD
+=======
+                res.end('Error upload failed:');
+>>>>>>> a8e39c9eb36ee34cf3d4e1d554b57feadd14ed42
                 return console.error('upload failed:', err);
             }
             var data = JSON.parse(body);
