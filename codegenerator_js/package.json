@@ -1,0 +1,11 @@
+{
+  "name": "node-echoprint-codegen",
+  "version": "0.5.0",
+  "dependencies": {},
+  "devDependencies": {
+    "echoprint-codegen": "^0.1.5",
+    "express": "^4.13.3",
+    "request": "^2.65.0",
+    "util": "^0.10.3"
+  }
+}
