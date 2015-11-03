@@ -30,3 +30,15 @@
 
 
 #### php server
+
+Содержимое папки [php server](https://github.com/ilyashishov/myMusic-server/tree/master/php%20server "php server") скопировать в Apache.
+
+# Запуск
+
+Запускаем Apache и MySQL.
+
+Запускаем node-echoprint-server.
+	node index
+
+Запускаем codegenerator_js.
+	node server
