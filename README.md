@@ -38,7 +38,9 @@
 Запускаем Apache и MySQL.
 
 Запускаем node-echoprint-server.
+
 	node index
 
 Запускаем codegenerator_js.
+
 	node server
